@@ -15,12 +15,12 @@
   <header>
     <div><a href="#sec-home"><img id="logo" src="images/logo.png" alt="Ceci Au's Logo"></a></div>
     <nav>
-      <ul id="nav-bar">
+      <ul id="nav-bar" class="nav-bar">
+        <li id="nav-toggle"><i class="fa-solid fa-bars"></i></li>
         <li class="nav-item"><a href="#sec-home">HOME</a></li>
         <li class="nav-item"><a href="#sec-about">ABOUT</a></li>
         <li class="nav-item"><a href="#sec-projects">PROJECTS</a></li>
         <li class="nav-item"><a href="#sec-contact">CONTACT</a></li>
-        <li id="nav-toggle"><i class="fa-solid fa-bars"></i></li>
       </ul>
     </nav>
   </header>
@@ -122,10 +122,10 @@
       <div id="project-board">
         <h2><span class="highlight-text">My</span> Projects</h2>
         <div class="project-container">
-          <input type="radio" name="slider" checked="checked" id="slider-humber">
-          <input type="radio" name="slider" id="slider-sudoku">
-          <input type="radio" name="slider" id="slider-catvsdog">
-          <input type="radio" name="slider" id="slider-fyp">
+          <input type="radio" name="slider" checked="checked" id="slider-humber" class="slider-radio">
+          <input type="radio" name="slider" id="slider-sudoku" class="slider-radio">
+          <input type="radio" name="slider" id="slider-catvsdog" class="slider-radio">
+          <input type="radio" name="slider" id="slider-fyp" class="slider-radio">
           <!-- <div class="project-slider">
             <i class="slider-arrow slider-left fa-solid fa-chevron-left"></i>
             <i class="slider-arrow slider-up fa-solid fa-chevron-up"></i>
@@ -137,7 +137,7 @@
             <i class="slider-arrow slider-down fa-solid fa-chevron-down"></i>
           </div> -->
           <div class="project-slider">
-            <ul>
+            <ul id="slider-ul">
               <li><label for="slider-humber"><img id="project-humber" class="project" src="images/humber-current.jpeg" alt="Capture of the program page of Humber Current"></label></li
               ><li><label for="slider-sudoku"><img id="project-sudoku" class="project" src="images/sudoku.jpeg" alt="Capture of the Sudoku page"></label></li
               ><li><label for="slider-catvsdog"><img id="project-catvsdog" class="project" src="images/catvsdog.jpeg"></label></li
@@ -191,7 +191,7 @@
     </section>
     <section id="sec-contact">
       <h2>Contact <span class="highlight-text">Me</span></h2>
-      <form method="POST" id="contact-form" name="contact-form">
+      <form method="POST" action="php/contact-form.php" id="contact-form" name="contact-form">
         <input type="text" id="form-name" class="form-content" name="form-name" placeholder="Name">
         <input type="email" id="form-email" class="form-content" name="form-email" placeholder="Email">
         <textarea id="form-message" class="form-content" name="form-message" placeholder="Message"></textarea>
