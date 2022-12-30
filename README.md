@@ -4,4 +4,4 @@
 - CSS: [/css/styles.css](Portfolio/css/styles.css)
 - JS: [/js/script.js](Portfolio/js/script.js)
 
-![Ceci Au's Portfolio](https://raw.githubusercontent.com/ceciaups/Portfolio/master/images/portfolio.png)
+![Ceci Au's Portfolio](https://raw.githubusercontent.com/ceciaups/Portfolio/master/images/Portfolio.png)
